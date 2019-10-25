@@ -1,0 +1,25 @@
+#corpo1 {
+	background-image: url("../imagens/woodtexture5.jpg");
+	background-color: #996600;
+	background-attachment: scroll;
+}
+#corpo2 {
+background-image: url("../imagens/woodtexture7.jpg");
+background-color: #cc8800;
+background-attachment: scroll;
+border-radius: 20px;
+}
+#navbar-bg{
+	color: #4d3300;
+	border-radius: 5px;
+}
+#topo-button{
+	border-color: #4d3300;
+}
+#topo-button:hover{
+	border-color: #4d3300;
+	background-color:#4d3300;
+}
+#topo-button:focus{
+box-shadow: 0 0 0 0.2rem rgba(77, 51, 0, 0.5);
+}

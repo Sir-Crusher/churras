@@ -1,0 +1,80 @@
+<!doctype HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Feedback</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/background.css">
+
+<!-- scripts -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="../js/bootstrap.bundle.js"></script>
+</head>
+<body id="corpo1">
+<div class="container" id="corpo2">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="navbar-bg">
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+<div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Feedback</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="../html/index.html">O que é Churrasco</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="../html/receitas.html">Receitas</a>
+    </li>
+	<li class="nav-item">
+      <a class="nav-link" href="../html/videos.html">Vídeos</a>
+    </li>
+	<li class="nav-item">
+      <a class="nav-link" href="../html/churrascarias.html">Churrascarias</a>
+    </li>
+  </ul>
+</div>
+</nav>
+<p class="font-weight-normal">Mande aqui suas opiniões e sugestões para o site</p>
+<form class="needs-validation" novalidate>
+<div class="form-group">
+	<label for="email">E-mail:</label>
+	<input type="email" class="control" id="email" required>
+	<div class="valid-feedback">Válido.</div>
+	<div class="invalid-feedback">Por favor preencha este campo.</div>
+</div>
+<div class="form-group">
+	<label for="feedback">Feedback: </label>
+	<textarea class="form-control" rows="5" name="text" id="feedback" placeholder="Digite aqui sua opinião." required></textarea>
+	<div class="valid-feedback">Válido.</div>
+	<div class="invalid-feedback">Por favor preencha este campo.</div>
+</div>
+ <button type="submit" class="btn btn-primary" id="bg-button">Enviar</button>
+</form>
+<br>
+</div>
+</div>
+<script>
+// Disable form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Get the forms we want to add validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+</body>
+</html>
